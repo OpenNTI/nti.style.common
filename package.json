@@ -1,0 +1,22 @@
+{
+  "name": "nti-style-common",
+  "version": "1.0.0",
+  "description": "Common styles & variables",
+  "main": "all.scss",
+  "style": "all.scss",
+  "scripts": {
+    "bump": "npm version",
+    "postbump": "git push --all && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://repos.nextthought.com/git/nti-style-common"
+  },
+  "keywords": [
+    "style",
+    "stylesheet",
+    "design"
+  ],
+  "author": "nextthought",
+  "license": "UNLICENSED"
+}

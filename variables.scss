@@ -1,0 +1,44 @@
+$header-font-family: 'Open Sans Condensed';
+$body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+
+//colors
+$primary-grey: #494949;
+$secondary-grey: #757474;
+$tertiary-grey: #b8b8b8;
+$quad-grey: #f8f8f8;//f9f9f9
+
+$disabled-button-border: #d0d0d0;
+$disabled-button-background: rgba(184,184,184,0.5);
+$disabled-button-color: rgba(255,255,255,0.7);
+
+$primary-red: #F35252;
+$secondary-red: #750000;
+
+$primary-blue: #3fb3f6;
+
+$primary-green: #8eb737;
+$secondary-green: #3fb34f;
+
+$primary-orange: #fa8700;
+
+$border-blue: #39a1dd;
+$border-grey: #ccc;
+$border-grey-alt: #d1d1d1;
+$border-red: #f35252;
+$text-red: #f2713e;
+
+$panel-background: #fbfbfb;
+
+
+$highlight-colors: (
+	// (name, menu color, hover)
+	('yellow',#EDE619,#F9F6AF),
+	('green',#4CE67F,#B7F5CC),
+	('blue',#3FB3F6,#CFECFD)
+);
+
+
+//assessment vars
+$correct: #9AC73C;
+$incorrect: #F35252;
+$neutral: $primary-blue;
