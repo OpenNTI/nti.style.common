@@ -1,34 +1,34 @@
-$header-font-family: 'Open Sans Condensed';
-$body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+$header-font-family: 'Open Sans Condensed' !default;
+$body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif !default;
 
 //colors
-$primary-grey: #494949;
-$secondary-grey: #757474;
-$tertiary-grey: #b8b8b8;
-$quad-grey: #f8f8f8;//f9f9f9
+$primary-grey: #494949 !default;
+$secondary-grey: #757474 !default;
+$tertiary-grey: #b8b8b8 !default;
+$quad-grey: #f8f8f8 !default;//f9f9f9
 
-$disabled-button-border: #d0d0d0;
-$disabled-button-background: rgba(184,184,184,0.5);
-$disabled-button-color: rgba(255,255,255,0.7);
+$disabled-button-border: #d0d0d0 !default;
+$disabled-button-background: rgba(184,184,184,0.5) !default;
+$disabled-button-color: rgba(255,255,255,0.7) !default;
 
-$primary-red: #F35252;
-$secondary-red: #750000;
+$primary-red: #F35252 !default;
+$secondary-red: #750000 !default;
 
-$primary-blue: #3fb3f6;
+$primary-blue: #3fb3f6 !default;
 
-$primary-green: #8eb737;
-$secondary-green: #3fb34f;
+$primary-green: #8eb737 !default;
+$secondary-green: #3fb34f !default;
 
-$primary-orange: #fa8700;
+$primary-orange: #fa8700 !default;
 
-$border-blue: #39a1dd;
-$border-grey: #ccc;
-$border-grey-alt: #d1d1d1;
-$border-grey-light: #e2e2e2;
-$border-red: #f35252;
-$text-red: #f2713e;
+$border-blue: #39a1dd !default;
+$border-grey: #ccc !default;
+$border-grey-alt: #d1d1d1 !default;
+$border-grey-light: #e2e2e2 !default;
+$border-red: #f35252 !default;
+$text-red: #f2713e !default;
 
-$panel-background: #fbfbfb;
+$panel-background: #fbfbfb !default;
 
 
 $highlight-colors: (
@@ -36,10 +36,10 @@ $highlight-colors: (
 	('yellow',#EDE619,#F9F6AF),
 	('green',#4CE67F,#B7F5CC),
 	('blue',#3FB3F6,#CFECFD)
-);
+) !default;
 
 
 //assessment vars
-$correct: #9AC73C;
-$incorrect: #F35252;
-$neutral: $primary-blue;
+$correct: #9AC73C !default;
+$incorrect: #F35252 !default;
+$neutral: $primary-blue !default;

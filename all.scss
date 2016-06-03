@@ -1,4 +1,7 @@
+//The compiled output of the default import (all.scss) should NOT contribute any
+//CSS rules to the importer. (test this with node-sass all.scss)
+
 @import
-    "./mixins",
-    "./variables",
-    "./placeholders";
+    "./mixins.scss",
+    "./variables.scss", //forcing extentions since there is a variable.css too.
+    "./placeholders.scss";
