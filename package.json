@@ -2,8 +2,8 @@
   "name": "nti-style-common",
   "version": "1.0.10",
   "description": "Common styles & variables",
-  "main": "all.scss",
-  "style": "all.scss",
+  "main": "main.scss",
+  "style": "main.scss",
   "scripts": {
     "bump": "npm version",
     "postversion": "git push && git push --tags && npm publish"
