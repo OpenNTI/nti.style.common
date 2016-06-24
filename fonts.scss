@@ -6,7 +6,18 @@
 @import "./fonts/stix/index";
 @import "./fonts/symbola/index";
 
-i[class^="icon-"], i[class*=" icon-"] {
+//Defaults:
+i[class^="icon-"],
+i[class*=" icon-"] {
 	vertical-align: middle;
-	font-size: 32px;
+	//DO NOT ASSUME FONT SIZE in the default case.
+
+	//Allow to opt into a locked size
+	&.small { font-size: 16px !important; }
+	&.large { font-size: 32px !important; }
 }
+
+//This sucks... we've made the default be 32px so, now there are more instances of this overridding it...
+// FIXME: clean up all instances of styles using the default "icon-"...
+// if they're already overriding the font-size they're fine
+i[class^="icon-"], i[class*=" icon-"] { font-size: 32px; }
