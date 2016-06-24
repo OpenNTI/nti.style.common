@@ -9,10 +9,10 @@
 //Defaults:
 i[class^="icon-"],
 i[class*=" icon-"] {
-	vertical-align: middle;
 	//DO NOT ASSUME FONT SIZE in the default case.
 
 	//Allow to opt into a locked size
 	&.small { font-size: 16px !important; }
 	&.large { font-size: 32px !important; }
+	&.small, &.large { vertical-align: middle; }
 }
