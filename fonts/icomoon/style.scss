@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: 'icomoon';
-    src:    url('#{$icomoon-font-path}/icomoon.eot?ovdrij');
-    src:    url('#{$icomoon-font-path}/icomoon.eot?ovdrij#iefix') format('embedded-opentype'),
-        url('#{$icomoon-font-path}/icomoon.ttf?ovdrij') format('truetype'),
-        url('#{$icomoon-font-path}/icomoon.woff?ovdrij') format('woff'),
-        url('#{$icomoon-font-path}/icomoon.svg?ovdrij#icomoon') format('svg');
+    src:    url('#{$icomoon-font-path}/icomoon.eot?8y31s7');
+    src:    url('#{$icomoon-font-path}/icomoon.eot?8y31s7#iefix') format('embedded-opentype'),
+        url('#{$icomoon-font-path}/icomoon.ttf?8y31s7') format('truetype'),
+        url('#{$icomoon-font-path}/icomoon.woff?8y31s7') format('woff'),
+        url('#{$icomoon-font-path}/icomoon.svg?8y31s7#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,6 +29,16 @@
 .icon-search {
     &:before {
         content: $icon-search;
+    }
+}
+.icon-movedown {
+    &:before {
+        content: $icon-movedown;
+    }
+}
+.icon-moveup {
+    &:before {
+        content: $icon-moveup;
     }
 }
 .icon-add-fill {
