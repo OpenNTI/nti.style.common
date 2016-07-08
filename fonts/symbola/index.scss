@@ -1,9 +1,17 @@
 @font-face {
   font-family: Symbola;
   src: url(Symbola.eot);
-  src: local("Symbola Regular"),
-  	local("Symbola"),
+  src: local("Symbola Regular"), local("Symbola"),
   	url(Symbola.eot?#iefix) format("embedded-opentype"),
+	url(Symbola.ttf) format("truetype"),
+	url(Symbola.woff) format("woff");
+}
+
+//We sometomes refer to this as Stix?! (moved this def from the webapp)
+@font-face {
+  font-family: Stix;
+  src: url(Symbola.eot);
+  src: local("Symbola Regular"), local("Symbola"),
 	url(Symbola.ttf) format("truetype"),
 	url(Symbola.woff) format("woff");
 }
