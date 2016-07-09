@@ -1,6 +1,11 @@
 // import this file if you're an application (not a component — components import main, the default export of this module)
 
 @import
-    "./main.scss",
-    "./fonts.scss",
-    "./animations.scss";
+	"./main.scss",
+	"./fonts.scss",
+	"./animations.scss";
+
+//Standardize on border-box (this fixes all the test harnesses)
+*, *:before, *:after {
+	box-sizing: border-box;
+}
