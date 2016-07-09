@@ -9,3 +9,12 @@
 *, *:before, *:after {
 	box-sizing: border-box;
 }
+
+
+//Prevent UI elements from getting text selections
+body {
+	user-select: none;
+	[contenteditable] {
+		user-select: text !important;
+	}
+}
