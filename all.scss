@@ -18,3 +18,8 @@ body {
 		user-select: text !important;
 	}
 }
+
+//force font-family on inputs
+body, input, select, textarea {
+	font-family: $body-font-family;
+}
