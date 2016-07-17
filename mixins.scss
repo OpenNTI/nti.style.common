@@ -24,6 +24,7 @@
 	transform: translate3d(0,-50%, 0);
 }
 
+
 @mixin viewports($rule, $factor) { // used by viewportWidth and viewportHeight, below.
 	//iOS 7 fix:
 	// iPad with portrait orientation.
@@ -58,6 +59,7 @@
 	//iPhone 6's never had iOS7 on them.
 }
 
+
 @mixin viewportWidth($rule, $value) {
 	$w: $value;
 	#{$rule}: #{$w}vw;
@@ -72,6 +74,7 @@
 	$factor: $h/100;
 	@include viewports($rule, $factor)
 }
+
 
 @mixin metadata() {
 	background: rgba(0,0,0,0.2);
