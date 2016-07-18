@@ -114,3 +114,15 @@
 		}
 	}
 }
+
+
+@mixin limit-lines ($count: 2) {
+	max-height: $count * 1em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+
+	//Magic non-standard CSS:
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: $count;
+}
