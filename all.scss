@@ -23,3 +23,8 @@ body {
 body, input, select, textarea {
 	font-family: $body-font-family;
 }
+
+//Remove the blue focus rings
+*:focus {
+	outline: none;
+}
