@@ -116,13 +116,13 @@
 }
 
 
-@mixin limit-lines ($count: 2) {
-	max-height: $count * 1em;
+@mixin limit-lines ($lines: 2, $line-height: 1.15) {
+	max-height: $lines * ($line-height * 1em);
 	overflow: hidden;
 	text-overflow: ellipsis;
 
 	//Magic non-standard CSS:
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: $count;
+	-webkit-line-clamp: $lines;
 }
