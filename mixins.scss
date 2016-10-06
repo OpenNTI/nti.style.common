@@ -126,3 +126,19 @@
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: $lines;
 }
+
+
+@mixin covered-modal () {
+	body > .modal:not(:last-child) & {
+		@content
+	}
+}
+
+@mixin opacity-on-covered-modal () {
+	transition: opacity 0.5s;
+	opacity: 1;
+
+	@include covered-modal () {
+		opacity: 0.05;
+	}
+}
