@@ -129,7 +129,8 @@
 
 
 @mixin covered-modal () {
-	body > .modal:not(:last-child) & {
+	body > .modal:not(:last-child) &,
+	body > .modal[aria-hidden="true"] & {
 		@content
 	}
 }
