@@ -25,6 +25,19 @@
 }
 
 
+@mixin hardware-render {
+	backface-visibility: hidden;
+	transform: translate3d(0, 0, 0);
+}
+
+
+@mixin touch-scroll {
+	backface-visibility: hidden;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+
 @mixin viewports($rule, $factor) { // used by viewportWidth and viewportHeight, below.
 	//iOS 7 fix:
 	// iPad with portrait orientation.
