@@ -134,10 +134,20 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 
-	//Magic non-standard CSS:
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: $lines;
+	// Why do we need a block? autoprefixer will strip "-webkit-box-orient" and break the line-clamp, now that no
+	// supported browsers use the old flexbox rules. However, this line-clamp trick still needs that rule...so we
+	// aim to disable autoprefixer in the smallest block allowed. (if we just disable autoprefixer at the mixin-
+	// level, the block mixed-in would have autoprefixer disabled too... which would be bad)
+	// Point 2: We would use @supports() instead of @media, but Safari <=8 do not support that, while they do
+	// support the rules in the block, so we use an @rule that will result in a block.
+	// @supports (display: -webkit-box) {
+	@media screen {
+		//Magic non-standard CSS:
+		/* autoprefixer: off */
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: $lines;
+	}
 }
 
 
