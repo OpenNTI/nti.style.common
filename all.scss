@@ -13,6 +13,7 @@
 
 //Prevent UI elements from getting text selections
 body {
+	margin: 0;
 	user-select: none;
 	[contenteditable] {
 		user-select: text !important;
