@@ -22,6 +22,7 @@
 
 %icon-survey {
 	@extend %icon-font;
+
 	content: "\e606";
 }
 
@@ -36,45 +37,52 @@
 
 %chevron-left {
 	@extend %chevron;
+
 	position: relative;
 	top: -1px;
 }
 
 %chevron-left-white {
 	@extend %chevron-left;
+
 	color: white;
 }
 
 %chevron-right {
 	@extend %chevron;
+
 	content: '>';
 }
 
 %chevron-right-white {
 	@extend %chevron-right;
+
 	color: white;
 }
 
 %chevron-up {
 	@extend %chevron;
+
 	content: '^';
 }
 
 %chevron-up-white {
 	@extend %chevron-up;
+
 	color: white;
 }
 
 %chevron-down {
 	@extend %chevron;
+
 	content: 'v';
 }
 
 %chevron-down-white {
 	@extend %chevron-down;
+
 	color: white;
 }
-
 
 %middot-before {
 	&::before {
@@ -107,16 +115,14 @@
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-
 %interaction-disabled {
 	opacity: 0.6;
+
 	&, * {
 		pointer-events: none;
 		cursor: default !important;
 	}
 }
-
-
 
 %dialog-buttons {
 	overflow: hidden;
@@ -131,7 +137,7 @@
 		left: 0;
 		right: 0;
 		background-color: #f0f0f0;
-		box-shadow: 0 0 5px 0 rgba(0,0,0,0.35);
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
 		clip: rect(300px, auto, 310px, auto);
 		border-radius: 350em / 4em;
 	}
@@ -154,7 +160,6 @@
 			font-weight: 300;
 		}
 
-
 		&.primary {
 			background: $primary-blue;
 			color: white;
@@ -176,13 +181,12 @@
 
 			html:not(.touch) &:hover {
 				background: white;
-				box-shadow: inset 0 0 1px 0 rgba(0,0,0,0.5);
+				box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.5);
 			}
 
 			&.declinde, &.caution {
 				color: $primary-red;
 			}
-
 		}
 
 		&.accept {
@@ -196,11 +200,10 @@
 	}
 }
 
-
 %form-fieldset {
 	position: relative;
 	border: 0;
-	padding: 1rem 0 0 0;
+	padding: 1rem 0 0;
 	margin: 0 0 2rem;
 
 	legend {
@@ -215,6 +218,7 @@
 
 	& > div {
 		position: relative;
+
 		&::after {
 			content: '';
 			display: table;

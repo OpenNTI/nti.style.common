@@ -6,7 +6,7 @@
 
 // We use this to do clear floats
 @mixin clearfix {
-	&:before, &:after {
+	&::before, &::after {
 		clear: both;
 		content: " ";
 		display: table;
@@ -17,19 +17,16 @@
 	}
 }
 
-
 @mixin vertical-align {
 	position: relative;
 	top: 50%;
-	transform: translate3d(0,-50%, 0);
+	transform: translate3d(0, -50%, 0);
 }
-
 
 @mixin hardware-render {
 	backface-visibility: hidden;
 	transform: translate3d(0, 0, 0);
 }
-
 
 @mixin touch-scroll {
 	backface-visibility: hidden;
@@ -37,77 +34,76 @@
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-
 @mixin viewports($rule, $factor) { // used by viewportWidth and viewportHeight, below.
 	//iOS 7 fix:
 	// iPad with portrait orientation.
-	@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+	@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
 		#{$rule}: #{768*$factor}px;
 	}
 
 	// iPad with landscape orientation.
-	@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+	@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
 		#{$rule}: #{1024*$factor}px;
 	}
 
 	// iPhone 1-4 with portrait orientation.
-	@media all and (device-width: 320px) and (device-height: 480px) and (orientation:portrait){
+	@media all and (device-width: 320px) and (device-height: 480px) and (orientation: portrait) {
 		#{$rule}: #{320*$factor}px;
 	}
 
 	// iPhone 1-4 with landscape orientation.
-	@media all and (device-width: 320px) and (device-height: 480px) and (orientation:landscape){
+	@media all and (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
 		#{$rule}: #{480*$factor}px;
 	}
 
 	// iPhone5 with portrait orientation.
-	@media all and (device-width: 320px) and (device-height: 568px) and (orientation:portrait){
+	@media all and (device-width: 320px) and (device-height: 568px) and (orientation: portrait) {
 		#{$rule}: #{320*$factor}px;
 	}
 
 	// iPhone5 with landscape orientation.
-	@media all and (device-width: 320px) and (device-height: 568px) and (orientation:landscape){
+	@media all and (device-width: 320px) and (device-height: 568px) and (orientation: landscape) {
 		#{$rule}: #{568*$factor}px;
 	}
 	//iPhone 6's never had iOS7 on them.
 }
 
-
 @mixin viewportWidth($rule, $value) {
 	$w: $value;
+
 	#{$rule}: #{$w}vw;
 	$factor: $w/100;
-	@include viewports($rule, $factor)
-}
 
+	@include viewports($rule, $factor);
+}
 
 @mixin viewportHeight($rule, $value) {
 	$h: $value;
+
 	#{$rule}: #{$h}vh;
 	$factor: $h/100;
-	@include viewports($rule, $factor)
-}
 
+	@include viewports($rule, $factor);
+}
 
 //TODO: this seems like a component style
 @mixin metadata() {
-	background: rgba(0,0,0,0.2);
-	border-radius:2px;
-	color:white;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	color: white;
 }
-
 
 //TODO: this seems like a component style
 @mixin count-badge() {
 	@include metadata();
-	padding:.2em .5em;
-	margin-left:.25em;
+
+	padding: 0.2em 0.5em;
+	margin-left: 0.25em;
 	display: inline-block;
 	font-family: $body-font-family;
 	font-weight: bold;
-	margin-right:-.25em;
+	margin-right: -0.25em;
 }
-
 
 @mixin retina-asset($path, $type: 'png', $xCount: 2) {
 	//$path will be something like ./assets/some-asset
@@ -128,7 +124,6 @@
 	}
 }
 
-
 @mixin limit-lines ($lines: 2, $line-height: 1.15) {
 	max-height: $lines * ($line-height * 1em);
 	overflow: hidden;
@@ -143,6 +138,7 @@
 	// @supports (display: -webkit-box) {
 	@media screen {
 		//Magic non-standard CSS:
+
 		/* autoprefixer: off */
 		display: -webkit-box;
 		-webkit-box-orient: vertical;
@@ -150,10 +146,9 @@
 	}
 }
 
-
 @mixin covered-modal () {
 	body > .modal[aria-hidden="true"] & {
-		@content
+		@content;
 	}
 }
 

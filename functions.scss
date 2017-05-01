@@ -7,14 +7,15 @@ $rem-base: 16px !default;
 	@return $num / ($num * 0 + 1);
 }
 
-@function convert-to-rem($value, $base-value: $rem-base)  {
+@function convert-to-rem($value, $base-value: $rem-base) {
 	@if ($value != auto) {
 		$value: strip-unit($value) / strip-unit($base-value) * 1rem;
-		@if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
+		// Turn 0rem into 0
+		@if ($value == 0rem) { $value: 0; } /* stylelint-disable-line */
 	}
+
 	@return $value;
 }
-
 
 // Call with 1, 2, 3 or 4 parameters, \'px\' is not required but supported
 // rem-calc(10 20 30px 40);
@@ -30,8 +31,10 @@ $rem-base: 16px !default;
 	@if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
 
 	$remValues: ();
+
 	@for $i from 1 through $max {
 		$remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
 	}
+
 	@return $remValues;
 }

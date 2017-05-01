@@ -10,10 +10,10 @@ $tertiary-grey: #b8b8b8 !default;
 $quad-grey: #f8f8f8 !default;//f9f9f9
 
 $disabled-button-border: #d0d0d0 !default;
-$disabled-button-background: rgba(184,184,184,0.5) !default;
-$disabled-button-color: rgba(255,255,255,0.7) !default;
+$disabled-button-background: rgba(184, 184, 184, 0.5) !default;
+$disabled-button-color: rgba(255, 255, 255, 0.7) !default;
 
-$primary-red: #F35252 !default;
+$primary-red: #f35252 !default;
 $secondary-red: #750000 !default;
 $error-text-color: $primary-red !default;
 
@@ -41,16 +41,14 @@ $panel-background-yellow: #fff8eb !default;
 
 $transparent-dark-background: rgba(35, 35, 35, 0.7);
 
-
 $highlight-colors: (
 	// (name, menu color, hover)
-	('yellow',#EDE619,#F9F6AF),
-	('green',#4CE67F,#B7F5CC),
-	('blue',#3FB3F6,#CFECFD)
+	('yellow',#ede619,#f9f6af),
+	('green',#4ce67f,#b7f5cc),
+	('blue',#3fb3f6,#cfecfd)
 ) !default;
 
-
 //assessment vars
-$correct: #9AC73C !default;
-$incorrect: #F35252 !default;
+$correct: #9ac73c !default;
+$incorrect: #f35252 !default;
 $neutral: $primary-blue !default;
