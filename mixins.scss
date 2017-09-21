@@ -34,6 +34,55 @@
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
+$break-minimum: 360px !default;
+$break-handheld: 800px !default;
+$break-small: 900px !default;
+$break-large: 1200px !default;
+$break-wide: 1600px !default;
+$break-short: 600px !default;
+
+@mixin respond-to($media) {
+	@if $media == smallest-handhelds {
+		@media only screen and (max-width: $break-minimum) { @content; }
+	}
+
+	@if $media == handhelds {
+		@media only screen and (max-width: $break-handheld) { @content; }
+	}
+
+	@else if $media == small-screens {
+		@media only screen and (max-width: $break-small) { @content; }
+	}
+
+	@else if $media == medium-screens {
+		@media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+	}
+
+	@else if $media == wide-screens {
+		@media only screen and (min-width: $break-large)  and (max-width: $break-wide) { @content; }
+	}
+
+	@else if $media == ultra-wide-screens {
+		@media only screen and (min-width: $break-wide + 1) { @content; }
+	}
+
+	@else if $media == up-to-medium-screens {
+		@media only screen and (max-width: $break-large) { @content; }
+	}
+
+	@else if $media == up-to-wide-screens {
+		@media only screen and (max-width: $break-wide) { @content; }
+	}
+
+	@else if $media == down-to-handhelds {
+		@media only screen and (min-width: $break-handheld + 1) { @content; }
+	}
+
+	@else if $media == short-screens {
+		@media only screen and (max-height: $break-short) { @content; }
+	}
+}
+
 @mixin viewports($rule, $factor) { // used by viewportWidth and viewportHeight, below.
 	//iOS 7 fix:
 	// iPad with portrait orientation.
