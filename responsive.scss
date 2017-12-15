@@ -1,0 +1,35 @@
+$responsive-ranges: (
+	mobile: (null, 480px),
+	tablet: (481px, 1024px),
+	desktop: (1025px, null)
+);
+
+@function get-media-query-for-range ($range) {
+	$min: nth($range, 1);
+	$max: nth($range, 2);
+	$query: "";
+
+	@if $min and $max {
+		$query: "(min-width: #{$min}) and (max-width: #{$max})";
+	} @else if $min {
+		$query: "(min-width: #{$min})";
+	} @else if $max {
+		$query: "(max-width: #{$max})";
+	} @else {
+		@error "Invalid Range";
+	}
+
+	@return $query;
+}
+
+@mixin responsive-range($range, $ranges: $responsive-ranges) {
+	@if map-has-key($ranges, $range) {
+		$query: get-media-query-for-range(map-get($ranges, $range));
+
+		@media #{$query} {
+			@content;
+		}
+	} @else {
+		@error "The key #{$range} is not defined in the ranges";
+	}
+}
