@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('#{$icomoon-font-path}/icomoon.eot?zap0ou');
-  src:  url('#{$icomoon-font-path}/icomoon.eot?zap0ou#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/icomoon.ttf?zap0ou') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?zap0ou') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?zap0ou#icomoon') format('svg');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?r8281p');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?r8281p#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?r8281p') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?r8281p') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?r8281p#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,11 +30,6 @@
   @return unquote("\"") + $str + unquote("\"");
 }
 
-.icon-search {
-  &:before {
-    content: unicode($icon-search); 
-  }
-}
 .icon-createlarge {
   &:before {
     content: unicode($icon-createlarge); 
@@ -43,6 +38,16 @@
 .icon-light-x {
   &:before {
     content: unicode($icon-light-x); 
+  }
+}
+.icon-search {
+  &:before {
+    content: unicode($icon-search); 
+  }
+}
+.icon-launch {
+  &:before {
+    content: unicode($icon-launch); 
   }
 }
 .icon-hyperlink {
