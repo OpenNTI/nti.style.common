@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('#{$icomoon-font-path}/icomoon.eot?r8281p');
-  src:  url('#{$icomoon-font-path}/icomoon.eot?r8281p#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/icomoon.ttf?r8281p') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?r8281p') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?r8281p#icomoon') format('svg');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?xtlsd4');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?xtlsd4#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?xtlsd4') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?xtlsd4') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?xtlsd4#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -62,12 +62,14 @@
 }
 .icon-grid {
   &:before {
-    content: unicode($icon-grid); 
+    content: unicode($icon-grid);     
+    color: #787878;
   }
 }
 .icon-list {
   &:before {
-    content: unicode($icon-list); 
+    content: unicode($icon-list);     
+    color: #787878;
   }
 }
 .icon-hide {
