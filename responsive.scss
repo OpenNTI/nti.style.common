@@ -1,7 +1,9 @@
 $responsive-ranges: (
 	mobile: (null, 480px),
 	tablet: (481px, 1024px),
-	desktop: (1025px, null)
+	desktop: (1025px, null),
+	mobile-tablet: (null, 1024px),
+	tablet-desktop: (481px, null)
 );
 
 @function get-media-query-for-range ($range) {
