@@ -212,3 +212,25 @@ $break-short: 600px !default;
 		opacity: 0.05;
 	}
 }
+
+@mixin wide-screen () {
+	padding-top: 56.25%;
+}
+
+@mixin wide-screen-video () {
+	@include wide-screen;
+
+	position: relative;
+	overflow: hidden;
+
+	iframe {
+		height: 100%;
+	}
+	video, iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		max-width: 100%;
+		width: 100%;
+	}
+}
