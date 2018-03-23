@@ -19,6 +19,6 @@
   "author": "nextthought",
   "license": "UNLICENSED",
   "devDependencies": {
-    "eslint-config-nti-codestyle-jsx": "^1.3.0"
+    "@nti/codestyle-jsx": "^1.15.0"
   }
 }
