@@ -29,3 +29,7 @@ body, input, select, textarea {
 *:focus {
 	outline: none;
 }
+
+input:required {
+	box-shadow: none; // override firefox's default red ring on required inputs
+}
