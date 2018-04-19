@@ -4,6 +4,7 @@
   "description": "Common styles & variables",
   "main": "main.scss",
   "style": "main.scss",
+  "releaseMode": "interactive",
   "scripts": {
     "postversion": "git push && git push --tags && npm publish"
   },
