@@ -6,4 +6,4 @@
 	"./animations.scss",
 	"./all-mixin.scss";
 
-@include all;
+@include all(true);

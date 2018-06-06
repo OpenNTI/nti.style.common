@@ -1,0 +1,35 @@
+// shouldn't be any need to use this directly outside of all.scss and all-selectable.scss;
+
+@mixin all ($selectable: false) {
+	//Standardize on border-box (this fixes all the test harnesses)
+	*, *::before, *::after {
+		box-sizing: border-box;
+	}
+
+	//Prevent UI elements from getting text selections
+	body {
+		margin: 0;
+
+		@if not $selectable {
+			user-select: none;
+
+			[contenteditable] {
+				user-select: text !important;
+			}
+		}
+	}
+
+	//force font-family on inputs
+	body, input, select, textarea {
+		font-family: $body-font-family;
+	}
+
+	//Remove the blue focus rings
+	*:focus {
+		outline: none;
+	}
+
+	input:required {
+		box-shadow: none; // override firefox's default red ring on required inputs
+	}
+}
