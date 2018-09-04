@@ -1,19 +1,19 @@
 @import "variables";
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('#{$icomoon-font-path}/icomoon.eot?z3e36d');
-  src:  url('#{$icomoon-font-path}/icomoon.eot?z3e36d#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/icomoon.ttf?z3e36d') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?z3e36d') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?z3e36d#icomoon') format('svg');
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?kkbd3');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?kkbd3#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?kkbd3') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?kkbd3') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?kkbd3##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: '#{$icomoon-font-family}' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -26,6 +26,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-outline .path1 {
+  &:before {
+    content: $icon-outline-path1;  
+    color: rgb(186, 185, 185);
+  }
+}
+.icon-outline .path2 {
+  &:before {
+    content: $icon-outline-path2;  
+    margin-left: -1em;  
+    color: rgb(221, 220, 220);
+  }
+}
+.icon-outline .path3 {
+  &:before {
+    content: $icon-outline-path3;  
+    margin-left: -1em;  
+    color: rgb(186, 185, 185);
+  }
+}
+.icon-outline .path4 {
+  &:before {
+    content: $icon-outline-path4;  
+    margin-left: -1em;  
+    color: rgb(221, 220, 220);
+  }
+}
 .icon-createlarge {
   &:before {
     content: $icon-createlarge; 
@@ -39,6 +66,12 @@
 .icon-search {
   &:before {
     content: $icon-search; 
+  }
+}
+.icon-clock-archive {
+  &:before {
+    content: $icon-clock-archive;     
+    color: #757474;
   }
 }
 .icon-addfriend {
