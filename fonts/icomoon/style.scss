@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?kkbd3');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?kkbd3#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?kkbd3') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?kkbd3') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?kkbd3##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?b942kh');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?b942kh#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?b942kh') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?b942kh') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?b942kh##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,33 +26,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-outline .path1 {
-  &:before {
-    content: $icon-outline-path1;  
-    color: rgb(186, 185, 185);
-  }
-}
-.icon-outline .path2 {
-  &:before {
-    content: $icon-outline-path2;  
-    margin-left: -1em;  
-    color: rgb(221, 220, 220);
-  }
-}
-.icon-outline .path3 {
-  &:before {
-    content: $icon-outline-path3;  
-    margin-left: -1em;  
-    color: rgb(186, 185, 185);
-  }
-}
-.icon-outline .path4 {
-  &:before {
-    content: $icon-outline-path4;  
-    margin-left: -1em;  
-    color: rgb(221, 220, 220);
-  }
-}
 .icon-createlarge {
   &:before {
     content: $icon-createlarge; 
@@ -68,10 +41,9 @@
     content: $icon-search; 
   }
 }
-.icon-clock-archive {
+.icon-unfollow {
   &:before {
-    content: $icon-clock-archive;     
-    color: #757474;
+    content: $icon-unfollow; 
   }
 }
 .icon-addfriend {
