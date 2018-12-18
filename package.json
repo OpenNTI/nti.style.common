@@ -1,6 +1,6 @@
 {
   "name": "@nti/style-common",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "Common styles & variables",
   "main": "main.scss",
   "style": "main.scss",
