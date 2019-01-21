@@ -1,43 +1,35 @@
 :root {
-    --header-font-family: 'Open Sans Condensed';
-    --body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+	--header-font-family: 'Open Sans Condensed';
+	--body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
 
-    --primary-grey: #494949;
-    --secondary-grey: #757474;
-    --tertiary-grey: #b8b8b8;
-    --quad-grey: #f8f8f8;
-
-    --disabled-button-border: #d0d0d0;
-    --disabled-button-background: rgba(184,184,184,0.5);
-    --disabled-button-color: rgba(255,255,255,0.7);
-
-    --primary-red: #F35252;
-    --secondary-red: #750000;
-
-    --primary-blue: #3fb3f6;
-
-    --primary-green: #8eb737;
-    --secondary-green: #3fb34f;
-
-    --primary-orange: #fa8700;
-
-    --border-blue: #39a1dd;
-    --border-grey: #ccc;
-    --border-grey-alt: #d1d1d1;
-    --border-grey-light: #e2e2e2;
-    --border-red: #f35252;
-    --text-red: #f2713e;
-
-    --panel-background: #fbfbfb;
-
-    --highlight-colors-yellow-menu: #EDE619;
-    --highlight-colors-yellow-hover: #F9F6AF;
-    --highlight-colors-green-menu: #4CE67F;
-    --highlight-colors-green-hover: #B7F5CC;
-    --highlight-colors-blue-menu: #3FB3F6;
-    --highlight-colors-blue-hover: #CFECFD;
-
-    --correct: #9AC73C;
-    --incorrect: #F35252;
-    --neutral: var(--primary-blue);
+	/* colors */
+	--primary-grey: #494949;
+	--secondary-grey: #757474;
+	--tertiary-grey: #b8b8b8;
+	--quad-grey: #f8f8f8;
+	--disabled-button-border: #d0d0d0;
+	--disabled-button-background: rgba(184, 184, 184, 0.5);
+	--disabled-button-color: rgba(255, 255, 255, 0.7);
+	--primary-red: #f35252;
+	--secondary-red: #750000;
+	--primary-blue: #3fb3f6;
+	--primary-green: #8eb737;
+	--secondary-green: #3fb34f;
+	--primary-orange: #fa8700;
+	--border-blue: #39a1dd;
+	--border-grey: #ccc;
+	--border-grey-alt: #d1d1d1;
+	--border-grey-light: #e2e2e2;
+	--border-red: #f35252;
+	--text-red: #f2713e;
+	--panel-background: #fbfbfb;
+	--highlight-colors-yellow-menu: #ede619;
+	--highlight-colors-yellow-hover: #f9f6af;
+	--highlight-colors-green-menu: #4ce67f;
+	--highlight-colors-green-hover: #b7f5cc;
+	--highlight-colors-blue-menu: #3fb3f6;
+	--highlight-colors-blue-hover: #cfecfd;
+	--correct: #9ac73c;
+	--incorrect: #f35252;
+	--neutral: var(--primary-blue);
 }
