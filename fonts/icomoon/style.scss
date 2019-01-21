@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?2pmhu2');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?2pmhu2#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?2pmhu2') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?2pmhu2') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?2pmhu2##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?1q9jyh');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?1q9jyh#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?1q9jyh') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?1q9jyh') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?1q9jyh##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -39,6 +39,11 @@
 .icon-search {
   &:before {
     content: $icon-search; 
+  }
+}
+.icon-ArrowUp-Outline {
+  &:before {
+    content: $icon-ArrowUp-Outline; 
   }
 }
 .icon-clock {
