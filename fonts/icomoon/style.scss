@@ -2,13 +2,14 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?t3ankr');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?t3ankr#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?t3ankr') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?t3ankr') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?t3ankr##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?kzqh4u');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?kzqh4u#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?kzqh4u') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?kzqh4u') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?kzqh4u##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
@@ -41,29 +42,79 @@
     content: $icon-search; 
   }
 }
-.icon-caretdown-10 {
+.icon-unlock {
   &:before {
-    content: $icon-caretdown-10; 
+    content: $icon-unlock; 
   }
 }
-.icon-chevronup-10 {
+.icon-lock {
   &:before {
-    content: $icon-chevronup-10; 
+    content: $icon-lock; 
   }
 }
-.icon-chevronleft-10 {
+.icon-bell {
   &:before {
-    content: $icon-chevronleft-10; 
+    content: $icon-bell; 
   }
 }
-.icon-chevronright-10 {
+.icon-arrow-up-outline {
   &:before {
-    content: $icon-chevronright-10; 
+    content: $icon-arrow-up-outline; 
   }
 }
-.icon-chevrondown-10 {
+.icon-clock {
   &:before {
-    content: $icon-chevrondown-10; 
+    content: $icon-clock; 
+  }
+}
+.icon-check-10 {
+  &:before {
+    content: $icon-check-10; 
+  }
+}
+.icon-chevron-down-10 {
+  &:before {
+    content: $icon-chevron-down-10; 
+  }
+}
+.icon-chevron-left-10 {
+  &:before {
+    content: $icon-chevron-left-10; 
+  }
+}
+.icon-chevron-right-10 {
+  &:before {
+    content: $icon-chevron-right-10; 
+  }
+}
+.icon-chevron-up-10 {
+  &:before {
+    content: $icon-chevron-up-10; 
+  }
+}
+.icon-more {
+  &:before {
+    content: $icon-more; 
+  }
+}
+.icon-unfollow {
+  &:before {
+    content: $icon-unfollow; 
+  }
+}
+.icon-addfriend {
+  &:before {
+    content: $icon-addfriend; 
+  }
+}
+.icon-friend {
+  &:before {
+    content: $icon-friend; 
+  }
+}
+.icon-download {
+  &:before {
+    content: $icon-download; 
   }
 }
 .icon-launch {
