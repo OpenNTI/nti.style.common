@@ -20,6 +20,6 @@
   "author": "nextthought",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@nti/codestyle-jsx": "^1.15.0"
+    "@nti/stylelint-config-standard": "^2.21.0"
   }
 }
