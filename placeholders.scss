@@ -5,7 +5,7 @@
 
 %svg-icon-mask {
 	mask-size: 100% 100%;
-	background-color: $secondary-grey;
+	background-color: var(--secondary-grey);
 }
 
 %icon-font {
@@ -29,7 +29,7 @@
 %chevron {
 	font-family: 'icomoon';
 	content: '<';
-	color: $primary-blue;
+	color: var(--primary-blue);
 	font-size: 1.5em;
 	vertical-align: middle;
 	text-transform: none;
@@ -155,15 +155,15 @@
 		min-width: 90px;
 
 		&.cancel {
-			color: $primary-grey;
+			color: var(--primary-grey);
 			background: none;
 			font-weight: 300;
 		}
 
 		&.primary {
-			background: $primary-blue;
+			background: var(--primary-blue);
 			color: white;
-			box-shadow: inset 1px 0 0 0 $border-blue;
+			box-shadow: inset 1px 0 0 0 var(--border-blue);
 
 			html:not(.touch) &:hover {
 				opacity: 0.9;
@@ -177,7 +177,7 @@
 
 		&.secondary {
 			font-weight: 300;
-			color: $primary-grey;
+			color: var(--primary-grey);
 
 			html:not(.touch) &:hover {
 				background: white;
@@ -185,17 +185,17 @@
 			}
 
 			&.declinde, &.caution {
-				color: $primary-red;
+				color: var(--primary-red);
 			}
 		}
 
 		&.accept {
-			background: $secondary-green;
+			background: var(--secondary-green);
 		}
 
 		&.decline,
 		&.caution {
-			background: $primary-red;
+			background: var(--primary-red);
 		}
 	}
 }
@@ -209,7 +209,7 @@
 	legend {
 		font-size: 1rem;
 		font-weight: 600;
-		color: $primary-grey;
+		color: var(--primary-grey);
 	}
 
 	input {
@@ -231,10 +231,10 @@
 		bottom: -0.325rem;
 		left: 0.5rem;
 		z-index: 10;
-		background: $primary-red;
+		background: var(--primary-red);
 		font-size: 0.8rem;
-		color: $secondary-red;
-		border: 1px solid $secondary-red;
+		color: var(--secondary-red);
+		border: 1px solid var(--secondary-red);
 		padding: 0 0.25rem;
 		display: block;
 		margin: 0;
