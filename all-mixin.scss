@@ -21,7 +21,7 @@
 
 	//force font-family on inputs
 	body, input, select, textarea {
-		font-family: $body-font-family;
+		font-family: var(--body-font-family);
 	}
 
 	//Remove the blue focus rings

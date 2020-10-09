@@ -121,7 +121,7 @@ $break-short: 600px !default;
 	padding: 0.2em 0.5em;
 	margin-left: 0.25em;
 	display: inline-block;
-	font-family: $body-font-family;
+	font-family: var(--body-font-family);
 	font-weight: bold;
 	margin-right: -0.25em;
 }
