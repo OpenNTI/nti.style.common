@@ -2,6 +2,10 @@
 	--header-font-family: 'Open Sans Condensed';
 	--body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', helvetica, arial, sans-serif;
 
+	/* flip these two values for light/dark mode */
+	--accent-color-overlay-inverted: 255, 255, 255;
+	--accent-color-overlay: 0, 0, 0;
+
 	/* colors */
 	--primary-background: #343434;
 	--primary-grey: #494949;
@@ -19,6 +23,7 @@
 	--secondary-red: #750000;
 	--primary-blue: #3fb3f6;
 	--primary-blue-rgb: 63, 179, 246;
+	--secondary-blue: #168fe7;
 	--light-blue: #f5fbff; /* 5% of primary blue */
 	--primary-green: #8eb737;
 	--primary-green: 142, 183, 55;
