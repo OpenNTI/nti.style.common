@@ -1,6 +1,6 @@
 :root {
 	--header-font-family: 'Open Sans Condensed';
-	--body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+	--body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', helvetica, arial, sans-serif;
 
 	/* colors */
 	--primary-background: #343434;
@@ -15,23 +15,27 @@
 	--disabled-button-background: rgba(184, 184, 184, 0.5);
 	--disabled-button-color: rgba(255, 255, 255, 0.7);
 	--primary-red: #f35252;
+	--primary-red-rgb: 243, 82, 82;
 	--secondary-red: #750000;
 	--primary-blue: #3fb3f6;
+	--primary-blue-rgb: 63, 179, 246;
 	--light-blue: #f5fbff; /* 5% of primary blue */
 	--primary-green: #8eb737;
+	--primary-green: 142, 183, 55;
 	--light-green: #ebf7ed; /* 10% of $primary-green */
 	--secondary-green: #3fb34f;
-	--primary-orange: #fa8700;
+	--primary-orange: 250, 135, 0;
 	--primary-purple: #924aff;
 	--border-blue: #39a1dd;
-	--border-green-light: rgba(var(--primary-green), 0.3);
-	--border-green-dark: rgba(var(--primary-green), 0.6);
+	--border-green-light: rgba(var(--primary-green-rgb), 0.3);
+	--border-green-dark: rgba(var(--primary-green-rgb), 0.6);
 	--border-grey: #ccc;
 	--border-grey-alt: #d1d1d1;
 	--border-grey-light: #e2e2e2;
 	--border-red: #f35252;
 	--text-red: #f2713e;
 	--panel-background: #fbfbfb;
+	--panel-background-rgb: 251, 251, 251;
 	--panel-background-alt: #f1f1f1;
 	--panel-background-blue: #f7fbfe;
 	--panel-background-yellow: #fff8eb;
