@@ -15,7 +15,7 @@
 	--tertiary-grey-alt: #d1d1d1;
 	--quad-grey: #f8f8f8;
 	--disabled-button-border: #d0d0d0;
-	--disabled-button-border: #d0d0d0 !default;
+	--disabled-button-border: #d0d0d0;
 	--disabled-button-background: rgba(184, 184, 184, 0.5);
 	--disabled-button-color: rgba(255, 255, 255, 0.7);
 	--primary-red: #f35252;
