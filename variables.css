@@ -45,7 +45,7 @@
 	--panel-background-alt: #f1f1f1;
 	--panel-background-blue: #f7fbfe;
 	--panel-background-yellow: #fff8eb;
-	--annotations-menu-bg: rgba(#333, 0.95);
+	--annotations-menu-bg: #333333f2;
 	--highlight-colors-yellow-menu: #ede619;
 	--highlight-colors-yellow-hover: #f9f6af;
 	--highlight-colors-green-menu: #4ce67f;
@@ -56,5 +56,4 @@
 	--correct: #9ac73c;
 	--incorrect: #f35252;
 	--neutral: var(--primary-blue);
-	--annotations-menu-bg: rgba(51, 51, 51, 0.95);
 }
