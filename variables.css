@@ -56,4 +56,5 @@
 	--correct: #9ac73c;
 	--incorrect: #f35252;
 	--neutral: var(--primary-blue);
+	--annotations-menu-bg: rgba(51, 51, 51, 0.95);
 }
