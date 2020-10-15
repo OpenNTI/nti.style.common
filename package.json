@@ -5,8 +5,9 @@
   "main": "main.scss",
   "style": "main.scss",
   "releaseMode": "interactive",
+  "private": true,
   "scripts": {
-    "postversion": "git push && git push --tags && npm publish"
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
