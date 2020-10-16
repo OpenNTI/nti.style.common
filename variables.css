@@ -31,6 +31,8 @@
 	--secondary-green: #3fb34f;
 	--primary-orange: #fa8700;
 	--primary-orange-rgb: 250, 135, 0;
+	--secondary-orange: #ffa500;
+	--secondary-orange-rgb: 255, 165, 0;
 	--primary-purple: #924aff;
 	--border-blue: #39a1dd;
 	--border-green-light: rgba(var(--primary-green-rgb), 0.3);
