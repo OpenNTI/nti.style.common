@@ -50,10 +50,13 @@
 	--annotations-menu-bg: #333333f2;
 	--highlight-colors-yellow-menu: #ede619;
 	--highlight-colors-yellow-hover: #f9f6af;
+	--highlight-colors-yellow: rgb(249, 246, 175, 0.65);
 	--highlight-colors-green-menu: #4ce67f;
 	--highlight-colors-green-hover: #b7f5cc;
+	--highlight-colors-green: rgb(183, 245, 204, 0.65);
 	--highlight-colors-blue-menu: #3fb3f6;
 	--highlight-colors-blue-hover: #cfecfd;
+	--highlight-colors-blue: rgb(207, 236, 253, 0.65);
 	--transparent-dark-background: rgba(35, 35, 35, 0.7);
 	--correct: #9ac73c;
 	--incorrect: #f35252;
