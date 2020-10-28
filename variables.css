@@ -17,7 +17,7 @@
 	--button-border: #e7e7e7;
 	--button-background: #e7e7e7;
 	--button-color: var(--primary-grey);
-	--button-color-alt: white; /*for dark/colored backgrounds*/
+	--button-color-alt: white; /* for dark/colored backgrounds */
 	--disabled-button-border: #d0d0d0;
 	--disabled-button-background: rgba(184, 184, 184, 0.5);
 	--disabled-button-color: rgba(255, 255, 255, 0.7);
