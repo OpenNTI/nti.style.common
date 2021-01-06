@@ -1,3 +1,15 @@
+
+@custom-media --respond-to-smallest-handhelds (max-width: 360px);
+@custom-media --respond-to-handhelds (max-width: 800px);
+@custom-media --respond-to-small-screens (max-width: 900px);
+@custom-media --respond-to-medium-screens (min-width: 901px) and (max-width: 1199px);
+@custom-media --respond-to-wide-screens (min-width: 1200px)  and (max-width: 1600px);
+@custom-media --respond-to-ultra-wide-screens (min-width: 1601px);
+@custom-media --respond-to-up-to-medium-screens (max-width: 1200px);
+@custom-media --respond-to-up-to-wide-screens (max-width: 1600px);
+@custom-media --respond-to-down-to-handhelds (min-width: 801px);
+@custom-media --respond-to-short-screens (max-height: 600px);
+
 :root {
 	--header-font-family: 'Open Sans Condensed';
 	--body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', helvetica, arial, sans-serif;
