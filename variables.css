@@ -79,5 +79,5 @@
 	--presence-available: var(--primary-green);
 	--presence-away: #ebcd25;
 	--presence-dnd: var(--primary-red);
-	--presence-offline: #747474;
+	--presence-offline: var(--secondary-grey);
 }
