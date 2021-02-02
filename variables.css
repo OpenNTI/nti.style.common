@@ -76,4 +76,8 @@
 	--correct: #9ac73c;
 	--incorrect: #f35252;
 	--neutral: var(--primary-blue);
+	--presence-available: var(--primary-green);
+	--presence-away: #ebcd25;
+	--presence-dnd: var(--primary-red);
+	--presence-offline: var(--secondary-grey);
 }
