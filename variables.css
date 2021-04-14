@@ -83,4 +83,8 @@
 	--presence-away: #ebcd25;
 	--presence-dnd: var(--primary-red);
 	--presence-offline: var(--secondary-grey);
+
+	--text-color-primary: var(--primary-grey);
+	--text-color-secondary: var(--secondary-grey);
+	--text-color-nav-link: var(--text-color-primary);
 }
