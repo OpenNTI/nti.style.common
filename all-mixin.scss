@@ -1,8 +1,10 @@
 // shouldn't be any need to use this directly outside of all.scss and all-selectable.scss;
 
-@mixin all ($selectable: false) {
+@mixin all($selectable: false) {
 	//Standardize on border-box (this fixes all the test harnesses)
-	*, *::before, *::after {
+	*,
+	*::before,
+	*::after {
 		box-sizing: border-box;
 	}
 
@@ -20,7 +22,11 @@
 	}
 
 	//force font-family on inputs
-	body, input, select, textarea {
+	body,
+	button,
+	input,
+	select,
+	textarea {
 		font-family: var(--body-font-family);
 	}
 
