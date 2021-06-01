@@ -1,9 +1,8 @@
-
 @custom-media --respond-to-smallest-handhelds (max-width: 360px);
 @custom-media --respond-to-handhelds (max-width: 800px);
 @custom-media --respond-to-small-screens (max-width: 900px);
 @custom-media --respond-to-medium-screens (min-width: 901px) and (max-width: 1199px);
-@custom-media --respond-to-wide-screens (min-width: 1200px)  and (max-width: 1600px);
+@custom-media --respond-to-wide-screens (min-width: 1200px) and (max-width: 1600px);
 @custom-media --respond-to-ultra-wide-screens (min-width: 1601px);
 @custom-media --respond-to-up-to-medium-screens (max-width: 1200px);
 @custom-media --respond-to-up-to-wide-screens (max-width: 1600px);
@@ -14,8 +13,9 @@
 	/* We don't currently (correctly) support user-selected font sizes, this locks the 1rem base size */
 	font-size: 16px;
 
-	--header-font-family: 'Open Sans Condensed';
-	--body-font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', helvetica, arial, sans-serif;
+	--header-font-family: "Open Sans Condensed";
+	--body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", helvetica,
+		arial, sans-serif;
 
 	/* flip these two values for light/dark mode */
 	--accent-color-overlay-inverted: 255, 255, 255;
@@ -23,6 +23,8 @@
 
 	/* colors */
 	--primary-background: #343434;
+	--secondary-background: #232323;
+	--secondary-background-rgb: 35, 35, 35;
 	--primary-grey: #494949;
 	--secondary-grey: #757474;
 	--secondary-grey-alt: #787878;
