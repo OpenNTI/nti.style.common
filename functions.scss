@@ -1,15 +1,17 @@
+@use "sass:math";
+
 //From Foundation: http://foundation.zurb.com/sites/docs/v/5.5.3/components/sass.html
 
 $rem-base: 16px !default;
 
 // It strips the unit of measure and returns it
 @function strip-unit($num) {
-	@return $num / ($num * 0 + 1);
+	@return math.div($num, $num * 0 + 1);
 }
 
 @function convert-to-rem($value, $base-value: $rem-base) {
 	@if ($value != auto) {
-		$value: strip-unit($value) / strip-unit($base-value) * 1rem;
+		$value: math.div(strip-unit($value), strip-unit($base-value)) * 1rem;
 		// Turn 0rem into 0
 		@if ($value == 0rem) { $value: 0; } /* stylelint-disable-line */
 	}
