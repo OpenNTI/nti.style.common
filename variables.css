@@ -13,9 +13,18 @@
 	/* We don't currently (correctly) support user-selected font sizes, this locks the 1rem base size */
 	font-size: 16px;
 
+	--grid-base-unit: 4px;
+	--padding-xs: var(--grid-base-unit);
+	--padding-sm: calc(var(--grid-base-unit) * 2);
+	--padding-md: calc(var(--grid-base-unit) * 4);
+	--padding-lg: calc(var(--grid-base-unit) * 8);
+	--padding-xl: calc(var(--grid-base-unit) * 16);
+
 	--legacy-header-font-family: "Open Sans Condensed";
-	--body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", helvetica,
-		arial, sans-serif;
+	--body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", helvetica, arial, sans-serif;
+	--header-font-family: var(--body-font-family);
+	--header-font-weight: 300;
+	--header-font-style: normal;
 
 	/* flip these two values for light/dark mode */
 	--accent-color-overlay-inverted: 255, 255, 255;
