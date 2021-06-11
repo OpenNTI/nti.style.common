@@ -14,11 +14,18 @@
 	font-size: 16px;
 
 	--grid-base-unit: 4px;
+
 	--padding-xs: var(--grid-base-unit);
 	--padding-sm: calc(var(--grid-base-unit) * 2);
 	--padding-md: calc(var(--grid-base-unit) * 4);
 	--padding-lg: calc(var(--grid-base-unit) * 8);
 	--padding-xl: calc(var(--grid-base-unit) * 16);
+
+	--margin-xs: var(--grid-base-unit);
+	--margin-sm: calc(var(--grid-base-unit) * 2);
+	--margin-md: calc(var(--grid-base-unit) * 4);
+	--margin-lg: calc(var(--grid-base-unit) * 8);
+	--margin-xl: calc(var(--grid-base-unit) * 16);
 
 	--legacy-header-font-family: "Open Sans Condensed";
 	--body-font-family: "Open Sans", "Helvetica Neue", "Helvetica", helvetica, arial, sans-serif;
@@ -100,4 +107,7 @@
 	--text-color-primary: var(--primary-grey);
 	--text-color-secondary: var(--secondary-grey);
 	--text-color-nav-link: var(--text-color-primary);
+
+	--color-box-shadow: rgba(0, 0, 0, 0.15);
+	--box-shadow-sm: 0 1px 2px 1px var(--color-box-shadow);
 }
