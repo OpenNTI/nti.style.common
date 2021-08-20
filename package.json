@@ -1,13 +1,12 @@
 {
   "name": "@nti/style-common",
-  "version": "1.12.0",
+  "version": "1.12.0-alpha",
   "description": "Common styles & variables",
   "main": "main.scss",
   "style": "main.scss",
-  "releaseMode": "interactive",
   "private": true,
   "scripts": {
-    "postversion": "git push && git push --tags"
+    "release": "npx @nti/release"
   },
   "repository": {
     "type": "git",
