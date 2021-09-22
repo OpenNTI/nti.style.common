@@ -6,6 +6,7 @@
   "style": "main.scss",
   "private": true,
   "scripts": {
+    "postversion": "if [[ \"$npm_package_version\" != *-alpha ]]; then npm publish; fi",
     "release": "npx @nti/release"
   },
   "repository": {
