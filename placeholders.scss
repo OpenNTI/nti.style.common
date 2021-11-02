@@ -1,7 +1,7 @@
-//These should be converted to mixins... there isn't a way for us to uses these "correctly".
-//Placeholders add the exetenders' selector to the list of the rule body, but because of
-//how we are structured, every placeholder is mostly duplicated ever time its used. (assuming
-//its used accross projects)
+// These should be converted to mixins... there isn't a way for us to uses these "correctly".
+// Placeholders add the exetenders' selector to the list of the rule body, but because of
+// how we are structured, every placeholder is mostly duplicated ever time its used. (assuming
+// its used accross projects)
 
 %svg-icon-mask {
 	mask-size: 100% 100%;
@@ -9,7 +9,7 @@
 }
 
 %icon-font {
-	font-family: 'icomoon';
+	font-family: icomoon, serif;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -27,8 +27,8 @@
 }
 
 %chevron {
-	font-family: 'icomoon';
-	content: '<';
+	font-family: icomoon, serif;
+	content: "<";
 	color: var(--primary-blue);
 	font-size: 1.5em;
 	vertical-align: middle;
@@ -51,7 +51,7 @@
 %chevron-right {
 	@extend %chevron;
 
-	content: '>';
+	content: ">";
 }
 
 %chevron-right-white {
@@ -63,7 +63,7 @@
 %chevron-up {
 	@extend %chevron;
 
-	content: '^';
+	content: "^";
 }
 
 %chevron-up-white {
@@ -75,7 +75,7 @@
 %chevron-down {
 	@extend %chevron;
 
-	content: 'v';
+	content: "v";
 }
 
 %chevron-down-white {
@@ -99,7 +99,7 @@
 %middot {
 	text-decoration: none;
 	position: static;
-	content: '\00B7';
+	content: "\00B7";
 	padding: 0 0.5em;
 	background: none;
 }
@@ -116,9 +116,10 @@
 }
 
 %interaction-disabled {
-	opacity: 0.6;
+	opacity: 60%;
 
-	&, * {
+	&,
+	* {
 		pointer-events: none;
 		cursor: default !important;
 	}
@@ -128,16 +129,18 @@
 	overflow: hidden;
 	position: relative;
 	text-align: right;
+	display: flex;
+	flex-direction: row-reverse;
 
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		bottom: 40px;
 		height: 300px;
 		left: 0;
 		right: 0;
 		background-color: #f0f0f0;
-		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.35);
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, 35%);
 		clip: rect(300px, auto, 310px, auto);
 		border-radius: 350em / 4em;
 	}
@@ -166,7 +169,7 @@
 			box-shadow: inset 1px 0 0 0 var(--border-blue);
 
 			html:not(.touch) &:hover {
-				opacity: 0.9;
+				opacity: 90%;
 			}
 
 			&.decline,
@@ -181,10 +184,11 @@
 
 			html:not(.touch) &:hover {
 				background: white;
-				box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.5);
+				box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 50%);
 			}
 
-			&.declinde, &.caution {
+			&.declinde,
+			&.caution {
 				color: var(--primary-red);
 			}
 		}
@@ -220,7 +224,7 @@
 		position: relative;
 
 		&::after {
-			content: '';
+			content: "";
 			display: table;
 			clear: both;
 		}
